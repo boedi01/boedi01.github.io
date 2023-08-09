@@ -10,31 +10,17 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-summer-ice-cube-blue-fresh-banner-picture-image_1478135.jpg');
+            background-image: url('background.jpg'); /* Ganti 'background.jpg' dengan URL gambar background Anda */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            animation: animateBackground 20s infinite alternate;
-        }
-
-         @keyframes animateBackground {
-            0% { filter: brightness(100%); }
-            100% { filter: brightness(80%); }
         }
 
         header {
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.8); /* Ubah nilai RGBA sesuai keinginan Anda */
             color: #fff;
             padding: 20px;
             text-align: center;
-        }
-
-        .profile-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px auto;
-
         }
 
         #profile-img {
@@ -42,17 +28,15 @@
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 20px;
+            margin: 20px auto;
             display: block;
             border: 5px solid #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-            animation: blink 5s infinite;
-            
-            
+            transition: transform 0.3s ease; /* Efek transisi animasi untuk transformasi */
         }
+
         #profile-img:hover {
-            transform: scale(1.1);
+            transform: scale(1.1); /* Membuat gambar sedikit membesar saat dihover */
         }
 
         .container {
@@ -68,19 +52,27 @@
             padding: 10px;
             background-color: #f9f9f9;
             border-radius: 5px;
-            animation: blink 5s infinite;
-            
+            animation: blink 1s infinite; /* Animasi berkedip pada judul proyek */
         }
 
         @keyframes blink {
             0% { opacity: 1; }
             50% { opacity: 0; }
             100% { opacity: 1; }
+        }
 
+        .contact {
+            margin-top: 50px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
         }
 
         footer {
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.8); /* Ubah nilai RGBA sesuai keinginan Anda */
             color: #fff;
             text-align: center;
             padding: 10px;
@@ -94,29 +86,36 @@
     </header>
 
     <div class="container">
-        <img id="profile-img" src="https://blenderartists.org/uploads/default/original/4X/c/9/f/c9f226a51ae12aa48277b746ace9c83b8007d79f.jpeg" alt="Foto Profile">
-        
+        <img id="profile-img" src="profile.jpg" alt="Foto Profile"> <!-- Ganti 'profile.jpg' dengan URL gambar profil Anda -->
 
-        
         <div class="section">
             <h2>Tentang Saya</h2>
-            <p>Nama Saya Rafael Kristian Dwi Atmoko, biasa dipanggil Rafael.Saya pelajar SMKN2 SMG.Saya mengambil jurusan PPLG.</p>
-            <p>Saya berumur 16,rumah saya di Bangetayu Regency Blok e no 3,saya lahir di Semarang pada tanggal 24 bulan Mei tahun 2007</p>
-            <p>Cita cita saya menjadi progammer dan game developer hobi saya bermain game dan menjadi keeper di permainan sepakbola</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id faucibus risus, at aliquet odio. Maecenas
+                tincidunt, libero et egestas commodo, purus justo feugiat lacus, eu vehicula nisl dolor non odio. Sed
+                fringilla euismod elementum. Integer in consectetur urna. Fusce convallis eget tortor vel pellentesque.
+            </p>
         </div>
 
         <div class="section">
             <h2>Portofolio</h2>
             <div class="project">
-                <h3>Pengalaman</h3>
-                <p>Membuat Greenfoot.</p>
-                <p>Mendesain Logo perusahaan</p>
+                <h3>Proyek 1</h3>
+                <p>Deskripsi proyek 1.</p>
             </div>
             <div class="project">
-                <h3>Kontak</h3>
-                <p>Email:rafaelkrstian414@gmail.com</p>
-                <p>No Wa:082146729471</p>
+                <h3>Proyek 2</h3>
+                <p>Deskripsi proyek 2.</p>
             </div>
+        </div>
+
+        <div class="contact">
+            <h2>Hubungi Saya</h2>
+            <p>Jika Anda tertarik bekerja sama atau punya pertanyaan, silakan hubungi saya melalui:</p>
+            <ul>
+                <li>Email: contoh@email.com</li>
+                <li>Telepon: 081234567890</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/namaprofil/" target="_blank">linkedin.com/in/namaprofil</a></li>
+            </ul>
         </div>
     </div>
 
